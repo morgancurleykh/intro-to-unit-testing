@@ -19,13 +19,14 @@ docker build -t intro-to-unit-testing ./
 ### Start test watcher
 
 ```
-docker run --name iut -v $(pwd)/src:/src -t intro-to-unit-testing; docker rm $(docker ps -q -a)
+docker run --name iut -v $(pwd)/src:/src -t intro-to-unit-testing; docker rm iut;
 ```
 
 ### Connect to the Container to run commands
 
 ```
 docker exec -it iut /bin/bash
+docker exec -it iut /bin/bash; docker rm iut;
 ```
 
 #### Create records file
