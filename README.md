@@ -10,6 +10,12 @@ This repo provides a ready to go testing environment
 2. Download & Install Docker
 3. Link account to Komodo Hub via request to access from IT *(optional)*
 
+### Build Docker Image
+
+```
+docker build -t intro-to-unit-testing ./
+```
+
 ### Start test watcher
 
 ```
