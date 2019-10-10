@@ -37,7 +37,7 @@ docker exec -it iut /bin/bash
 docker exec -it iut /bin/bash; docker stop iut; docker rm iut;
 ```
 
-#### Run a computation
+### Run a computation
 
 ```
 python computations.py 200
