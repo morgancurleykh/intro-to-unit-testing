@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  test:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    #restart: on-failure
+    volumes:
+      - "~/Git/intro-to-unit-testing/src:/src"
