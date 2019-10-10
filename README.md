@@ -18,13 +18,13 @@ git clone https://github.com/morgancurleykh/intro-to-unit-testing.git
 cd intro-to-unit-testing
 ```
 
-### Build Docker Image
+### Build the Docker Image
 
 ```
 docker build -t intro-to-unit-testing ./
 ```
 
-### Start test watcher
+### Start the test watcher
 
 ```
 docker run --name iut -v $(pwd)/src:/src -t intro-to-unit-testing; docker stop iut; docker rm iut;
@@ -37,7 +37,7 @@ docker exec -it iut /bin/bash
 docker exec -it iut /bin/bash; docker stop iut; docker rm iut;
 ```
 
-#### Create records file
+#### Run a computation
 
 ```
 python computations.py 200
