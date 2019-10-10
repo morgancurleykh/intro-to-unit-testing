@@ -8,4 +8,4 @@ RUN pip install pytest pytest-testmon pytest-watch tdda factory_boy
 VOLUME ["/src"]
 WORKDIR /src
 
-CMD pip install -r requirements.txt && ptw -- --testmon ./tests/
+CMD pip install -r requirements.txt && pytest --testmon && ptw -- --testmon ./tests/
