@@ -1,20 +1,33 @@
 NaN = float("nan")
 
 
-def computeNewNumber(value):
-    if not value:
-        return NaN
+def step_1(i):
+    return i * 50 - 10
 
+
+def step_2(i):
+    return i ^ 2
+
+
+def step_3(i):
+    return i % 837 / 64
+
+
+def step_4(i):
+    return i ** 4 + 6 + -4
+
+
+def computeNewNumber(value):
     if not isinstance(value, int):
         return NaN
 
-    step1 = value * 50 - 10
+    step1 = step_1(value)
 
-    step2 = value ^ 2
+    step2 = step_2(step1)
 
-    step3 = value % 837 / 64
+    step3 = step_3(step2)
 
-    step4 = value ** 4 + 6 + -4
+    step4 = step_4(step3)
 
     return step4
 

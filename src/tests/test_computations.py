@@ -1,25 +1,27 @@
-from computations import computeNewNumber
+from computations import *
 
 
 def test_0():
-    assert computeNewNumber(0) == 27613.874975264072
+    end_result = step_4(step_3(step_2(step_1(0))))
+    assert computeNewNumber(0) == end_result
 
 
 def test_1():
-    assert computeNewNumber(1) == 2.185471534729004
+    end_result = step_4(step_3(step_2(step_1(1))))
+    assert computeNewNumber(1) == end_result
 
 
-def test_2():
-    assert computeNewNumber(2) == 5.574462890625
+def test_step_1():
+    assert step_1(1) == 40
 
 
-def test_3():
-    assert computeNewNumber(3) == 26.23446750640869
+def test_step_2():
+    assert step_2(2) == 0
 
 
-def test_5():
-    assert computeNewNumber(5) == 206.4285593032837
+def test_step_3():
+    assert step_3(2) == 0.03125
 
 
-def test_7000():
-    assert computeNewNumber(7000) == 15.204422950744629
+def test_step_4():
+    assert step_4(2) == 18
