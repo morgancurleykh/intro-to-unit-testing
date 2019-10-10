@@ -42,3 +42,9 @@ docker exec -it iut /bin/bash; docker stop iut; docker rm iut;
 ```
 python computations.py 200
 ```
+
+#### Create a file with fake records for 200 doctors
+
+```
+python generators.py 200 -o test_data.csv
+```
