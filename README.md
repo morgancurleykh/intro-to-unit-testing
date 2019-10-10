@@ -10,6 +10,14 @@ This repo provides a ready to go testing environment
 2. Download & Install Docker
 3. Link account to Komodo Hub via request to access from IT *(optional)*
 
+### Clone the repo
+
+```
+git clone https://github.com/morgancurleykh/intro-to-unit-testing.git
+
+cd intro-to-unit-testing
+```
+
 ### Build Docker Image
 
 ```
